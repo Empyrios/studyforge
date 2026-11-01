@@ -1,0 +1,12 @@
+{
+  "name": "studyforge",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Local-first MCQ and spaced-repetition revision workspace",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "check": "node --check site/app.mjs && node --check site/domain.mjs && node --check site/sw.js",
+    "verify": "npm run check && npm test"
+  }
+}
